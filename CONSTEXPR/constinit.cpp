@@ -9,7 +9,6 @@ constinit int g1 = 10;  // ok. 초기값을 컴파일 시간에 알아야 한다
 
 int main()
 {
-//    c1 = 20;  // error
+    // c1 = 20;  // error
     g1 = 20;  // ok
 }
-

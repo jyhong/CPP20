@@ -9,8 +9,10 @@ struct Point3D
 
 int main()
 {
-    Point3D p(1,2,3); // C++20 
-    Point3D pp(1); // 1, 0, 0
+    Point3D p(1,2,3); // C++20
+    Point3D pp(1); // 1, 0, 20
+    printf("%d, %d, %d\n", p.x, p.y, p.z);
+    printf("%d, %d, %d\n", pp.x, pp.y, pp.z);
 
     Point3D p1;         // 쓰레기값, 쓰레기값,쓰레기값
     Point3D p2 = {1,2,3};// 1, 2, 3

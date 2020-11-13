@@ -14,7 +14,7 @@ int main()
 {
     int x[2]   = {1,2};
     Point1 pt1 = {1,2};
-//    Point2 pt2 = {1,2}; // error
+    // Point2 pt2 = {1,2}; // error
 
     std::cout << std::is_aggregate_v<Point1> << std::endl;
     std::cout << std::is_aggregate_v<Point2> << std::endl;

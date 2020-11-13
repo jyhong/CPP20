@@ -14,8 +14,8 @@ int main()
     // C++20
     for( int y[3]{1,2,3}; auto n : y ) {}
 
-   // while( int n = 0; n < 10 ) {} // error
+    // while( int n = 0; n < 10 ) {} // error
 
-    for( int n = 0; n < 10; n++){}                                   
+    for( int n = 0; n < 10; n++){}
 
 }
