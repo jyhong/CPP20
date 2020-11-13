@@ -12,7 +12,7 @@ int main()
 {
     int* p = allocate(10);
 
-//    std::future<int> ret = 
+//    std::future<int> ret =
     std::async(std::launch::async, foo);
-    
+
 }

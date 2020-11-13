@@ -10,7 +10,7 @@ public:
 
     //auto operator<=>(const Point3D& pt) const = default;
 
-    auto operator<=>(const Point3D& pt) const 
+    auto operator<=>(const Point3D& pt) const
     {
         return z <=> pt.z;
     }
@@ -26,3 +26,15 @@ int main()
     bool b3 =  p1 <= p2;
     auto ret = p1 <=> p2;
 }
+
+// auto	operator<=>(const Point &pt) const
+// {
+//     if(auto ret = x <=> pt.x; ret != 0) return  ret;
+//     if(auto ret = y <=> pt.y; ret != 0) return  ret;
+//     return  z <=> pt.x;
+// }
+
+// bool    operator==(const Point &pt) const
+// {
+//     return  x == pt.x && y == pt.y && z = pt.z;
+// }

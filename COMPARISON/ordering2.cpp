@@ -1,17 +1,18 @@
 #include <iostream>
+#include    <cassert>
 #include <compare>
 
 struct Rect
 {
     int x, y, w, h;
     Rect(int x, int y, int w, int h) : x{x}, y{y}, w{w}, h{h} {}
-    
+
     // 사각형의 크기 비교..
-    //std::strong_ordering operator<=>(const Rect& r) const 
-    std::weak_ordering operator<=>(const Rect& r) const 
-    { 
-        // return std::strong_ordering 
-         return (w*h) <=> (r.w * r.h); 
+    //std::strong_ordering operator<=>(const Rect& r) const
+    std::weak_ordering operator<=>(const Rect& r) const
+    {
+        // return std::strong_ordering
+         return (w*h) <=> (r.w * r.h);
     }
 };
 

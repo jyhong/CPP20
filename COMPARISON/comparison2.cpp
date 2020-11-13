@@ -17,7 +17,7 @@ public:
     bool operator== (int other) const { return value ==  other;}
 };
 int main()
-{ 
+{
     Int32 n1{10};
     Int32 n2{20};
 
@@ -27,3 +27,12 @@ int main()
 
     bool b4 = 10 == n1;
 }
+
+// rewrite expression
+// 1. a==b --> b==a
+// 2. a!=b --> !(a==b) --> !(b==a)
+// 3. a<=>b --> 0<=>(b<=>a)
+// 4. a<b --> (a<=>b)<0 --> (b<=>a)>0
+// 5. a<=b --> (a<=>b)<=0 --> (b<=>a)>=0
+// 6. a>b --> (a<=>b)>0 --> (b<=>a)<0
+// 7. a>=b --> (a<=>b)>=0 --> (b<=>a)<=0

@@ -1,4 +1,3 @@
-
 struct MyType
 {
     [[nodiscard]]  MyType(int n, bool b) {}
@@ -13,6 +12,6 @@ int main()
     auto ret = foo();
 
     MyType t1 = MyType(1, true);
-    
+
     MyType(1, true);
 }

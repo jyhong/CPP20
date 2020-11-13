@@ -1,6 +1,6 @@
 #include <iostream>
 
-struct Empty 
+struct Empty
 {
     void foo() {}
 };

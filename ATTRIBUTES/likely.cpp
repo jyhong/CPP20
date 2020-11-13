@@ -1,17 +1,17 @@
-int foo(int i) 
+int foo(int i)
 {
 //    if ( __builtin_expect(i>0, 1 ) )
     if  ( i >  0) [[likely]]
-        i += 2; 
-    else 
-        i -= 2; 
+        i += 2;
+    else
+        i -= 2;
 
-    return i; 
-} 
+    return i;
+}
 
-int main() 
-{ 
+int main()
+{
     foo(10);
 
-    return 0; 
+    return 0;
 }
