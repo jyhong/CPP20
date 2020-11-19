@@ -21,9 +21,10 @@ int main()
     v.emplace_back("xxx", 50);
     v.emplace_back("bbb", 40);
 
-    //std::ranges::sort(v);
-    //std::ranges::sort(v, [](const People& p1, const People& p2) { return p1.age < p2.age;});
+    // std::ranges::sort(v);
+    // std::ranges::sort(v, [](const People& p1, const People& p2) { return p1.age < p2.age;});
 
+    // std::ranges::sort(v, std::less{}, &People::age);
     // std::ranges::sort(v, std::greater{}, &People::name);
     std::ranges::sort(v, {}, &People::name);
 

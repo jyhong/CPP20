@@ -8,8 +8,8 @@ int main()
 
     std::ranges::reverse_view rv1(v);
 
-//    std::ranges::reverse_view< std::vector<int> > rv2(v);
-//    std::ranges::reverse_view< std::ranges::ref_view<std::vector<int>> > rv2(v);
+    // std::ranges::reverse_view< std::vector<int> > rv2(v);    // error
+    // std::ranges::reverse_view< std::ranges::ref_view<std::vector<int>> > rv2(v); // OK
 
     auto rv2 = std::views::reverse(v);
 
