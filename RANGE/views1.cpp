@@ -10,15 +10,14 @@ int main()
 
     std::ranges::take_view tv(v, 3);
 
+    // can be combined
     std::ranges::transform_view trv(tv, [](int a) { std::cout << "op" << std::endl; return a*2;});
     std::cout << "start iterating" << std::endl;
 
     auto p1 = std::ranges::begin(trv);
 
+    // lazy operation
     v[0] =100;
-    
-    std::cout << *p1 << std::endl; 
 
-
-
+    std::cout << *p1 << std::endl; //lazy operation
 }

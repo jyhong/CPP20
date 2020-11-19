@@ -12,12 +12,11 @@ int main()
     auto p2 = v.begin();
 
     std::cout << *p1 << std::endl; // 1
-    std::cout << *p2 << std::endl; // 2
+    std::cout << *p2 << std::endl; // 1
 
     std::cout << &v           << std::endl;
     std::cout << &(rv.base()) << std::endl;
 
     std::vector<int>& r = v;
     r.begin();
-
 }
