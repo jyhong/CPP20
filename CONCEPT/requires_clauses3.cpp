@@ -15,5 +15,5 @@ void foo(T a)
 int main()
 {
     foo(3.4); // A 만 조건을 만족
-    foo(3); // sizeof(int) = 4
+    foo(3); // ERROR: sizeof(int) = 4
 }

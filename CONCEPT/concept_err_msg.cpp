@@ -12,9 +12,9 @@ void printv(T addr)
 int main()
 {
     int n = 10;
- //   printv(&n);
- //   printv(n);
+    printv(&n);
+    printv(n);
 
- //   std::list s = {1,2,3};
- //   std::sort(s.begin(), s.end());
+    // std::list s = {1,2,3};
+    // std::sort(s.begin(), s.end());
 }

@@ -16,5 +16,5 @@ T Mod(T a, T b)
 int main()
 {
     Mod(10,3);
- //   Mod(3.4, 2.1);
+    // Mod(3.4, 2.1);
 }

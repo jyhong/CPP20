@@ -4,7 +4,7 @@
 template<typename T> requires std::is_integral_v<T>
 T gcd( T a, T b )
 {
-//    static_assert( std::is_integral_v<T> );
+    // static_assert( std::is_integral_v<T> );
     return 0;
 }
 double gcd(double a, double b)
