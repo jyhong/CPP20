@@ -6,7 +6,7 @@ class Generator
 {
 public:
     struct Promise
-    {       
+    {
     private:
         T value;
     public:
@@ -16,10 +16,10 @@ public:
 		{
 			return Generator{ std::coroutine_handle<Promise>::from_promise(*this) };
 		}
-		auto yield_value(const T& n) 
+		auto yield_value(const T& n)
         {
             value = n;
-            return std::suspend_always{}; 
+            return std::suspend_always{};
         }
 		auto initial_suspend() { return std::suspend_always{}; }
 		auto return_void()     { return std::suspend_never{}; }
@@ -29,11 +29,11 @@ public:
     using promise_type = Promise;
     std::coroutine_handle<promise_type> coro;
     Generator( std::coroutine_handle<promise_type> c ) : coro(c) {}
-   
+
     ~Generator() { if ( coro ) coro.destroy();}
 
 
-    class Iter 
+    class Iter
     {
     public:
         void operator++() { coro.resume();	}
@@ -66,8 +66,6 @@ int main()
 
     // Generator 안에는 begin()/end() 가 있어야 하고
     // Generator 안에 반복자가 있으면 된다.
-
-
     for( auto n : g)
         std::cout << n << std::endl;
 

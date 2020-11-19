@@ -37,14 +37,14 @@ struct resume_new_thread
 Generator foo()
 {
     std::cout << "Run 1 : " << std::this_thread::get_id() << std::endl;
-    
+
     co_await resume_new_thread{};
 
-    //co_await std::suspend_always{};   
+    //co_await std::suspend_always{};
     //std::suspend_never awaiter;
     //co_await awaiter;
-    
-    std::cout << "Run 2 : " << std::this_thread::get_id() << std::endl;  
+
+    std::cout << "Run 2 : " << std::this_thread::get_id() << std::endl;
 }
 
 int main()
@@ -53,7 +53,5 @@ int main()
     g.coro.resume();
     std::cout << "main" << std::endl;
     int n;
-    std::cin >> n;     
+    std::cin >> n;
 }
-
-
