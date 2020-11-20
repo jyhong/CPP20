@@ -1,0 +1,6 @@
+- 과제 1, 2 해결
+- g++ 10.2.0 사용
+	g++ (Ubuntu 10.2.0-5ubuntu1~20.04) 10.2.0
+	Copyright (C) 2020 Free Software Foundation, Inc.
+	This is free software; see the source for copying conditions.  There is NO
+	warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
