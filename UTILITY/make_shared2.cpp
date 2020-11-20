@@ -13,11 +13,12 @@ int main()
 
     // new Point,   new Point{ std::forward<ARGS>(args)... }
     std::shared_ptr<Point> sp1   = std::make_shared<Point>();
-                                   
+
     std::cout << sp1->x << std::endl; // 0
 
-    std::shared_ptr<Point> sp2   = std::make_shared_for_overwrite<Point>(); // new Point;
-    std::shared_ptr<Point[]> sp3 = std::make_shared_for_overwrite<Point[]>(3);
+    // not yet implemented in g++ 10.2
+    // std::shared_ptr<Point> sp2   = std::make_shared_for_overwrite<Point>(); // new Point;
+    // std::shared_ptr<Point[]> sp3 = std::make_shared_for_overwrite<Point[]>(3);
 
 }
 

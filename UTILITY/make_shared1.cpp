@@ -6,7 +6,7 @@ int main()
     std::shared_ptr<int> sp1( new int);
     std::shared_ptr<int> sp2 = std::make_shared<int>();
 
-    std::shared_ptr<int[]> sp3(new int[10]); 
+    std::shared_ptr<int[]> sp3(new int[10]);
 	std::shared_ptr<int[]> sp4 = std::make_shared<int[10]>(); // C++20
 
 	auto sp5 = std::make_shared<int[]>(3);		// new int[3]
@@ -18,4 +18,5 @@ int main()
 	sp3[0] = 10; // ok
 //	*sp3   = 10; // error
 
+	std::cout << sp7[0] << ' ' << sp7[1] << ' ' << sp7[2] << std::endl;
 }
