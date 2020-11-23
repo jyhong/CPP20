@@ -1,4 +1,4 @@
-- 과제 1, 2, 3 해결
+- 과제 1, 2, 3, 4 해결
 - g++ 10.2.0 사용
 	g++ (Ubuntu 10.2.0-5ubuntu1~20.04) 10.2.0
 	Copyright (C) 2020 Free Software Foundation, Inc.
